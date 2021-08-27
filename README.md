@@ -5,7 +5,7 @@ A simple bash script for establishing a new Digital Ocean VPS for bug bounty hun
 
 ## Usage
 ```
-git clone 
-cd 
-bash 
+git clone https://github.com/rapradab/InfoSec-VPS-Establisher.git
+cd InfoSec-VPS-Establisher
+bash installer.sh
 ```
