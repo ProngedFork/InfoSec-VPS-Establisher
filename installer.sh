@@ -14,6 +14,6 @@ mv go /usr/local
 rm go1.17.linux-amd64.tar.gz
 
 #Setting up path for Go-Lang
-export GOROOT=/usr/local/go;
-export GOPATH=$HOME/go;
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH;
+echo "export GOROOT=/usr/local/go" >> ~/.bashrc
+echo "export GOPATH=$HOME/go" >> ~/.bashrc
+echo "export PATH=$GOPATH/bin:$GOROOT/bin:$PATH" >> ~/.bashrc
