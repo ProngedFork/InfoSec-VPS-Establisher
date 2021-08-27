@@ -25,3 +25,6 @@ apt-get install perl -y
 
 #Installing additional dependencies
 apt-get install screen git -y
+
+#Installing Chromium
+snap install chromium
