@@ -14,3 +14,7 @@ unzip aquatone_linux_amd64_1.4.3.zip
 mv aquatone /usr/local/bin/
 rm aquatone_linux_amd64_1.4.3.zip LICENSE.txt README.md
 gem install aquatone
+
+#Installing Eyewitness for taking screenshots
+git clone https://github.com/FortyNorthSecurity/EyeWitness.git /root/tools/eyewitness
+bash /root/tools/eyewitness/Python/setup/setup.sh
