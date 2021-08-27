@@ -13,3 +13,12 @@ rm go1.17.linux-amd64.tar.gz
 echo "export GOROOT=/usr/local/go" >> ~/.bashrc
 echo "export GOPATH=\$HOME/go" >> ~/.bashrc
 echo "export PATH=\$GOPATH/bin:\$GOROOT/bin:\$PATH" >> ~/.bashrc
+
+#Installing python3 and pip3
+apt-get install python3 python3-pip -y
+
+#Installing ruby
+apt-get install ruby -y
+
+#Installing perl
+apt-get install perl -y
