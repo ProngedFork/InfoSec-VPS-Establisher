@@ -19,6 +19,7 @@ apt-get install python3 python3-pip -y
 
 #Installing ruby
 apt-get install ruby -y
+apt-get install ruby-dev -y
 
 #Installing perl
 apt-get install perl -y
