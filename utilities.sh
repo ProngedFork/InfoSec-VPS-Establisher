@@ -22,3 +22,6 @@ apt-get install ruby -y
 
 #Installing perl
 apt-get install perl -y
+
+#Installing additional dependencies
+apt-get install screen git -y
