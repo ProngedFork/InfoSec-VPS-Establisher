@@ -29,3 +29,7 @@ apt-get install screen git -y
 
 #Installing Chromium
 apt install chromium-browser
+
+#Installing rust => proceed with option 1
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source $HOME/.cargo/env
