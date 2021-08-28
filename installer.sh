@@ -33,8 +33,9 @@ cent -p /root/nuclei-templates/cent-nuclei-templates -k
 #Installing interactsh server
 GO111MODULE=on go get -v github.com/projectdiscovery/interactsh/cmd/interactsh-client
 
-#Installing puredns
+#Installing puredns and shuffledns
 GO111MODULE=on go get github.com/d3mondev/puredns/v2
+GO111MODULE=on go get -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
 
 #Installing hakrawler and gospider
 go install github.com/hakluke/hakrawler@latest
