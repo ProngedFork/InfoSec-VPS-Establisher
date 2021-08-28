@@ -27,8 +27,8 @@ apt-get install perl -y
 #Installing additional dependencies
 apt-get install screen git -y
 
-#Installing Chromium
-apt install chromium-browser
+#Installing Chromium and fdupes
+apt install chromium-browser fdupes -y
 
 #Installing rust => proceed with option 1
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
