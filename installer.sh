@@ -66,3 +66,6 @@ cd /root/tools
 #Installing whatweb and nikto
 gem install bundler && bundle update
 apt install nikto whatweb -y
+
+#Installing notify
+GO111MODULE=on go get -v github.com/projectdiscovery/notify/cmd/notify
