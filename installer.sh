@@ -64,9 +64,10 @@ cd /root/tools/dnsvalidator/ && python3 setup.py install
 dnsvalidator -tL https://public-dns.info/nameservers.txt -threads 25 -o /root/tools/resolvers.txt
 cd /root/tools
 
-#Installing whatweb and nikto
+#Installing whatweb, nikto and wpscan
 gem install bundler && bundle update
 apt install nikto whatweb -y
+gem install wpscan
 
 #Installing notify
 GO111MODULE=on go get -v github.com/projectdiscovery/notify/cmd/notify
