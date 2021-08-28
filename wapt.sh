@@ -95,3 +95,14 @@ go get -u github.com/tomnomnom/qsreplace
 go get -u github.com/tomnomnom/anew
 go build /root/tools/tomnomnom-hacks/urinteresting/main.go
 mv /root/tools/tomnomnom-hacks/urinteresting/main /usr/local/bin/urinteresting
+
+#Installing gf for potentially vulnerable parameter and enpoint detection
+mkdir /root/.gf
+git clone https://github.com/tomnomnom/gf.git /root/tools/gf
+cd /root/tools/gf/ && go build /root/tools/gf/main.go
+mv /root/tools/gf/main /usr/local/bin/gf
+mv /root/tools/gf/examples/*.json /root/.gf/
+rm -rf /root/tools/gf/
+git clone https://github.com/1ndianl33t/Gf-Patterns /root/tools/Gf-Patterns
+mv /root/tools/Gf-Patterns/*.json /root/.gf/
+rm -rf /root/tools/Gf-Patterns
