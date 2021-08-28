@@ -54,3 +54,10 @@ pip3 install -r /root/tools/dirsearch/requirements.txt
 git clone https://github.com/danielmiessler/SecLists.git /root/tools/seclists
 wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH
 mv data /root/tools/assetnote-dict
+
+#Installing nmap, masscan, naabu and massdns
+apt-get install nmap masscan -y
+GO111MODULE=on go get -v github.com/projectdiscovery/naabu/v2/cmd/naabu
+git clone https://github.com/blechschmidt/massdns.git /root/tools/massdns
+cd /root/tools/massdns && make
+make install && cd /root/tools
