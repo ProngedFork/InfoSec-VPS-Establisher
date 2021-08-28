@@ -16,7 +16,7 @@ echo "export GOPATH=\$HOME/go" >> ~/.bashrc
 echo "export PATH=\$GOPATH/bin:\$GOROOT/bin:\$PATH" >> ~/.bashrc
 
 #Installing python3 and pip3
-apt-get install python3 python3-pip -y
+apt-get install python2 python3 python3-pip -y
 
 #Installing ruby
 apt-get install ruby libopenssl-ruby ruby-dev -y
