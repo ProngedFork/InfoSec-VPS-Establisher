@@ -70,3 +70,13 @@ apt install nikto whatweb -y
 
 #Installing notify
 GO111MODULE=on go get -v github.com/projectdiscovery/notify/cmd/notify
+
+#Installing subdomain enumeration tools
+GO111MODULE=on go get -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder
+GO111MODULE=on go get -v github.com/projectdiscovery/chaos-client/cmd/chaos
+go get -u github.com/tomnomnom/assetfinder
+go get -v github.com/OWASP/Amass/v3/...
+go get github.com/cgboal/sonarsearch/crobat
+git clone https://github.com/findomain/findomain.git /root/tools/findomain
+cd /root/tools/findomain/ && cargo build --release
+cp target/release/findomain /usr/bin/ && cd /root/tools
