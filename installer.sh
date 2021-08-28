@@ -34,3 +34,13 @@ nuclei -ut
 GO111MODULE=on go get -u github.com/xm1k3/cent
 cent init
 cent -p /root/nuclei-templates/cent-nuclei-templates -k
+
+#Installing interactsh server
+GO111MODULE=on go get -v github.com/projectdiscovery/interactsh/cmd/interactsh-client
+
+#Installing puredns
+GO111MODULE=on go get github.com/d3mondev/puredns/v2
+
+#Install hakrawler and gospider
+go install github.com/hakluke/hakrawler@latest
+GO111MODULE=on go get -u github.com/jaeles-project/gospider
