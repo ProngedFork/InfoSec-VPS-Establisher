@@ -10,6 +10,7 @@ $ cd InfoSec-VPS-Establisher
 $ bash utilities.sh
 $ source ~/.bashrc
 $ bash installer.sh
+$ source ~/.bashrc
 ```
 
 ---
