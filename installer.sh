@@ -18,3 +18,19 @@ gem install aquatone
 #Installing Eyewitness for taking screenshots
 git clone https://github.com/FortyNorthSecurity/EyeWitness.git /root/tools/eyewitness
 bash /root/tools/eyewitness/Python/setup/setup.sh
+
+#Installing httpx, httprobe and meg
+GO111MODULE=on go get -v github.com/projectdiscovery/httpx/cmd/httpx
+go get -u github.com/tomnomnom/httprobe
+go get -u github.com/tomnomnom/meg
+
+#Installing Waybackurls and gau
+go get github.com/tomnomnom/waybackurls
+GO111MODULE=on go get -u -v github.com/lc/gau
+
+#Installing nuclei, nuclei-templates and cent
+GO111MODULE=on go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+nuclei -ut
+GO111MODULE=on go get -u github.com/xm1k3/cent
+cent init
+cent -p /root/nuclei-templates/cent-nuclei-templates -k
