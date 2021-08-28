@@ -56,3 +56,9 @@ GO111MODULE=on go get -v github.com/projectdiscovery/naabu/v2/cmd/naabu
 git clone https://github.com/blechschmidt/massdns.git /root/tools/massdns
 cd /root/tools/massdns && make
 make install && cd /root/tools
+
+#Instaling dnsvalidator for valid resolvers
+git clone https://github.com/vortexau/dnsvalidator.git /root/tools/dnsvalidator
+cd /root/tools/dnsvalidator/ && python3 setup.py install
+dnsvalidator -tL https://public-dns.info/nameservers.txt -threads 25 -o /root/tools/resolvers.txt
+cd /root/tools
