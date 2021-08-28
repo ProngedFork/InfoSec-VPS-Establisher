@@ -10,7 +10,7 @@ $ cd InfoSec-VPS-Establisher
 $ bash utilities.sh
 $ source $HOME/.cargo/env
 $ source ~/.bashrc
-$ bash installer.sh
+$ bash wapt.sh
 $ source ~/.bashrc
 ```
 
