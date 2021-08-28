@@ -41,6 +41,16 @@ GO111MODULE=on go get -v github.com/projectdiscovery/interactsh/cmd/interactsh-c
 #Installing puredns
 GO111MODULE=on go get github.com/d3mondev/puredns/v2
 
-#Install hakrawler and gospider
+#Installing hakrawler and gospider
 go install github.com/hakluke/hakrawler@latest
 GO111MODULE=on go get -u github.com/jaeles-project/gospider
+
+#Installing ffuf and dirsearch
+go get -u github.com/ffuf/ffuf
+git clone https://github.com/maurosoria/dirsearch.git /root/tools/dirsearch
+pip3 install -r /root/tools/dirsearch/requirements.txt
+
+#Installing Seclists and Assetnote wordlists
+git clone https://github.com/danielmiessler/SecLists.git /root/tools/seclists
+wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH
+mv data /root/tools/assetnote-dict
