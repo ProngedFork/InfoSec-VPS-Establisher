@@ -85,3 +85,13 @@ cp target/release/findomain /usr/bin/ && cd /root/tools
 #Installing altdns and dnsgen
 pip3 install py-altdns
 pip3 install dnsgen
+
+#Installing anew, unfurl, antiburl, qsreplace and urinteresting
+git clone https://github.com/tomnomnom/hacks.git /root/tools/tomnomnom-hacks
+go build /root/tools/tomnomnom-hacks/anti-burl/main.go
+mv /root/tools/tomnomnom-hacks/anti-burl/main /usr/local/bin/antiburl
+go get -u github.com/tomnomnom/unfurl
+go get -u github.com/tomnomnom/qsreplace
+go get -u github.com/tomnomnom/anew
+go build /root/tools/tomnomnom-hacks/urinteresting/main.go
+mv /root/tools/tomnomnom-hacks/urinteresting/main /usr/local/bin/urinteresting
