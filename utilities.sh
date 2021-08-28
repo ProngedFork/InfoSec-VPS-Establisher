@@ -1,7 +1,8 @@
 #!/bin/bash
 
 #Updating and upgrading the box
-apt-get update && apt-get dist-upgrade -y 
+apt-get update && apt-get dist-upgrade -y
+apt-get install build-essential -y
 
 #Downloading Go-Lang v1.17
 wget https://golang.org/dl/go1.17.linux-amd64.tar.gz
