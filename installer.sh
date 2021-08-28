@@ -62,3 +62,7 @@ git clone https://github.com/vortexau/dnsvalidator.git /root/tools/dnsvalidator
 cd /root/tools/dnsvalidator/ && python3 setup.py install
 dnsvalidator -tL https://public-dns.info/nameservers.txt -threads 25 -o /root/tools/resolvers.txt
 cd /root/tools
+
+#Installing whatweb and nikto
+gem install bundler && bundle update
+apt install nikto whatweb -y
