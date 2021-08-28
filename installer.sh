@@ -81,3 +81,7 @@ go get github.com/cgboal/sonarsearch/crobat
 git clone https://github.com/findomain/findomain.git /root/tools/findomain
 cd /root/tools/findomain/ && cargo build --release
 cp target/release/findomain /usr/bin/ && cd /root/tools
+
+#Installing altdns and dnsgen
+pip3 install py-altdns
+pip3 install dnsgen
