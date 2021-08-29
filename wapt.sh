@@ -162,3 +162,16 @@ cargo install NtHiM
 go get -u -v github.com/lukasikic/subzy
 go install -v github.com/lukasikic/subzy@latest
 go get github.com/haccer/subjack
+
+#Installing dalfox, PwnXSS, gxss, kxss, xsstrike and xspear for XSS
+GO111MODULE=on go get -v github.com/hahwul/dalfox/v2
+go get github.com/Emoe/kxss
+go get -u github.com/KathanP19/Gxss
+git clone https://github.com/pwn0sec/PwnXSS /root/tools/pwnxss && chmod 755 -R /root/tools/pwnxss
+git clone https://github.com/s0md3v/XSStrike.git /root/tools/xsstrike
+pip3 install -r /root/tools/xsstrike/requirements.txt
+gem install colorize
+gem install selenium-webdriver
+gem install terminal-table
+gem install progress_bar
+gem install XSpear
