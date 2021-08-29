@@ -146,3 +146,10 @@ git clone https://github.com/Threezh1/JSFinder.git /root/tools/jsfinder
 git clone https://github.com/GerbenJavado/LinkFinder.git /root/tools/linkfinder
 python3 /root/tools/linkfinder/setup.py install
 pip3 install -r /root/tools/linkfinder/requirements.txt
+
+#Installing page-fetch and wadl-dumper
+go get github.com/detectify/page-fetch
+go get github.com/dwisiswant0/wadl-dumper
+
+#Installing crlfuzz for CRLFi
+GO111MODULE=on go get -v github.com/dwisiswant0/crlfuzz/cmd/crlfuzz
