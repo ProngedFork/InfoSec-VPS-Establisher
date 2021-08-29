@@ -109,3 +109,7 @@ rm -rf /root/tools/Gf-Patterns
 
 #Installing sqlmap for SQLi
 apt-get install sqlmap -y && sqlmap --update
+
+#Installing tplmap for SSTi
+git clone https://github.com/epinna/tplmap.git /root/tools/tplmap
+pip3 install -r /root/tools/tplmap/requirements.txt
