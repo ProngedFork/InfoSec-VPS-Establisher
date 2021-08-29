@@ -115,3 +115,7 @@ python3 /root/tools/nosqlmap/setup.py install
 #Installing tplmap for SSTi
 git clone https://github.com/epinna/tplmap.git /root/tools/tplmap
 pip3 install -r /root/tools/tplmap/requirements.txt
+
+#Installing ssrfmap for SSRF
+git clone https://github.com/swisskyrepo/SSRFmap.git /root/tools/ssrfmap
+pip3 install -r /root/tools/ssrfmap/requirements.txt
