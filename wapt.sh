@@ -124,3 +124,15 @@ pip3 install -r /root/tools/tplmap/requirements.txt
 #Installing ssrfmap for SSRF
 git clone https://github.com/swisskyrepo/SSRFmap.git /root/tools/ssrfmap
 pip3 install -r /root/tools/ssrfmap/requirements.txt
+
+#Installing gitrob, trufflehog, github-search, git-secrets and gitgraber for GitHub reconnaissance
+cd /root/tools/ && wget https://github.com/michenriksen/gitrob/releases/download/v2.0.0-beta/gitrob_linux_amd64_2.0.0-beta.zip
+unzip gitrob_linux_amd64_2.0.0-beta.zip
+rm gitrob_linux_amd64_2.0.0-beta.zip README.md && mv gitrob /usr/local/bin/
+pip3 install truffleHog
+git clone https://github.com/gwen001/github-search.git /root/tools/github-search-gwen
+go get github.com/eth0izzle/shhgit
+git clone https://github.com/awslabs/git-secrets.git /root/tools/git-secrets
+cd /root/tools/git-secrets/ && make install
+git clone https://github.com/hisxo/gitGraber.git /root/tools/gitgraber
+pip3 install -r /root/tools/gitgraber/requirements.txt
