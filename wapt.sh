@@ -136,3 +136,13 @@ git clone https://github.com/awslabs/git-secrets.git /root/tools/git-secrets
 cd /root/tools/git-secrets/ && make install
 git clone https://github.com/hisxo/gitGraber.git /root/tools/gitgraber
 pip3 install -r /root/tools/gitgraber/requirements.txt
+
+#Installing subjs, getjs, secretfinder, jsfinder and linkfinder for JS reconnaissance
+GO111MODULE=on go get -u -v github.com/lc/subjs
+go get github.com/003random/getJS
+git clone https://github.com/m4ll0k/SecretFinder.git /root/tools/secretfinder
+pip3 install -r /root/tools/secretfinder/requirements.txt
+git clone https://github.com/Threezh1/JSFinder.git /root/tools/jsfinder
+git clone https://github.com/GerbenJavado/LinkFinder.git /root/tools/linkfinder
+python3 /root/tools/linkfinder/setup.py install
+pip3 install -r /root/tools/linkfinder/requirements.txt
