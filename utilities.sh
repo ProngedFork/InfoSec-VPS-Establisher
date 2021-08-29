@@ -25,7 +25,7 @@ apt-get install ruby libopenssl-ruby ruby-dev zlib1g-dev liblzma-dev libsqlite3-
 apt-get install perl -y
 
 #Installing additional dependencies
-apt-get install screen git -y
+apt-get install screen tree git -y
 
 #Installing Chromium and fdupes
 apt install chromium-browser fdupes -y
