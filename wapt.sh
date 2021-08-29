@@ -107,8 +107,10 @@ git clone https://github.com/1ndianl33t/Gf-Patterns /root/tools/Gf-Patterns
 mv /root/tools/Gf-Patterns/*.json /root/.gf/
 rm -rf /root/tools/Gf-Patterns
 
-#Installing sqlmap for SQLi
+#Installing sqlmap and nosqlmap for SQLi
 apt-get install sqlmap -y && sqlmap --update
+git clone https://github.com/codingo/NoSQLMap.git /root/tools/nosqlmap
+python3 /root/tools/nosqlmap/setup.py install
 
 #Installing tplmap for SSTi
 git clone https://github.com/epinna/tplmap.git /root/tools/tplmap
