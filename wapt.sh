@@ -23,6 +23,9 @@ go get -u github.com/tomnomnom/meg
 go get github.com/tomnomnom/waybackurls
 GO111MODULE=on go get -u -v github.com/lc/gau
 
+#Installing h2i for host to ip conversion
+go get -u github.com/cybercdh/h2i
+
 #Installing nuclei, nuclei-templates and cent
 GO111MODULE=on go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
 nuclei -ut
