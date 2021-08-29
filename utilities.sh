@@ -33,3 +33,5 @@ apt install chromium-browser fdupes -y
 #Installing rust => proceed with option 1
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+#Installing bs4
+pip3 install bs4
