@@ -153,6 +153,8 @@ go get github.com/dwisiswant0/wadl-dumper
 
 #Installing crlfuzz for CRLFi
 GO111MODULE=on go get -v github.com/dwisiswant0/crlfuzz/cmd/crlfuzz
+git clone https://github.com/MichaelStott/CRLF-Injection-Scanner.git /root/tools/crlf-scanner
+python3 /root/tools/crlf-scanner/setup.py install
 
 #Install subover, nthim, subzy and subjack for STKO
 go get github.com/Ice3man543/SubOver
