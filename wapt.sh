@@ -106,3 +106,6 @@ rm -rf /root/tools/gf/
 git clone https://github.com/1ndianl33t/Gf-Patterns /root/tools/Gf-Patterns
 mv /root/tools/Gf-Patterns/*.json /root/.gf/
 rm -rf /root/tools/Gf-Patterns
+
+#Installing sqlmap for SQLi
+apt-get install sqlmap -y && sqlmap --update
