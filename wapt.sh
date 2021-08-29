@@ -82,9 +82,10 @@ git clone https://github.com/findomain/findomain.git /root/tools/findomain
 cd /root/tools/findomain/ && cargo build --release
 cp target/release/findomain /usr/bin/ && cd /root/tools
 
-#Installing altdns and dnsgen
+#Install altdns, goaltdns and dnsgen
 pip3 install py-altdns
 pip3 install dnsgen
+go get github.com/subfinder/goaltdns
 
 #Installing anew, unfurl, antiburl, qsreplace and urinteresting
 git clone https://github.com/tomnomnom/hacks.git /root/tools/tomnomnom-hacks
