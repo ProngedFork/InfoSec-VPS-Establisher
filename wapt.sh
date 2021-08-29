@@ -153,3 +153,10 @@ go get github.com/dwisiswant0/wadl-dumper
 
 #Installing crlfuzz for CRLFi
 GO111MODULE=on go get -v github.com/dwisiswant0/crlfuzz/cmd/crlfuzz
+
+#Install subover, nthim, subzy and subjack for STKO
+go get github.com/Ice3man543/SubOver
+cargo install NtHiM
+go get -u -v github.com/lukasikic/subzy
+go install -v github.com/lukasikic/subzy@latest
+go get github.com/haccer/subjack
