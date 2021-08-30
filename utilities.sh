@@ -15,8 +15,8 @@ echo "export GOROOT=/usr/local/go" >> ~/.bashrc
 echo "export GOPATH=\$HOME/go" >> ~/.bashrc
 echo "export PATH=\$GOPATH/bin:\$GOROOT/bin:\$PATH" >> ~/.bashrc
 
-#Installing python3 and pip3
-apt-get install python2 python3 python3-pip -y
+#Installing python3, pip3 and additional python based dependencies
+apt-get install python2 python3 python3-pip python-dev python3-dev -y
 
 #Installing ruby
 apt-get install ruby libopenssl-ruby ruby-dev zlib1g-dev liblzma-dev libsqlite3-dev -y
@@ -25,7 +25,7 @@ apt-get install ruby libopenssl-ruby ruby-dev zlib1g-dev liblzma-dev libsqlite3-
 apt-get install perl -y
 
 #Installing additional dependencies
-apt-get install screen tree git -y
+apt-get install screen tree git libcurl4-openssl-dev libssl-dev libpq-dev -y
 
 #Installing Chromium and fdupes
 apt install chromium-browser fdupes -y
