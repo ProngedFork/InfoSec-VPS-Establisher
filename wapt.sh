@@ -179,3 +179,7 @@ gem install selenium-webdriver
 gem install terminal-table
 gem install progress_bar
 gem install XSpear
+
+#Installing cmseek for CMS detection
+git clone https://github.com/Tuhinshubhra/CMSeeK.git /root/tools/cmseek
+pip3 install -r /root/tools/cmseek/requirements.txt
