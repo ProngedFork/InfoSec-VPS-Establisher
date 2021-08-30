@@ -183,3 +183,8 @@ gem install XSpear
 #Installing cmseek for CMS detection
 git clone https://github.com/Tuhinshubhra/CMSeeK.git /root/tools/cmseek
 pip3 install -r /root/tools/cmseek/requirements.txt
+
+#Installing interlace for multithreading
+git clone https://github.com/codingo/Interlace.git /root/tools/interlace
+cd /root/tools/interlace && pip3 install -r /root/tools/interlace/requirements.txt
+python3 /root/tools/interlace/setup.py install
