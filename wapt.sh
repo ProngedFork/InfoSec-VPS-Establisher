@@ -67,11 +67,13 @@ cd /root/tools/dnsvalidator/ && python3 setup.py install
 dnsvalidator -tL https://public-dns.info/nameservers.txt -threads 25 -o /root/tools/resolvers.txt
 cd /root/tools
 
-#Installing whatweb, nikto, wpscan and wordpress-exploit-framework
+#Installing whatweb, nikto, nettacker wpscan and wordpress-exploit-framework
 gem install bundler && bundle update
 apt install nikto whatweb -y
 gem install wpscan
 gem install wpxf
+git clone https://github.com/OWASP/Nettacker.git /root/tools/nettacker && cd /root/tools/nettacker
+pip3 install -r /root/tools/nettacker/requirements.txt && python3 /root/tools/nettacker/setup.py install
 
 #Installing notify
 GO111MODULE=on go get -v github.com/projectdiscovery/notify/cmd/notify
