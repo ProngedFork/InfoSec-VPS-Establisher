@@ -95,12 +95,12 @@ go get github.com/subfinder/goaltdns
 
 #Installing anew, unfurl, antiburl, qsreplace and urinteresting
 git clone https://github.com/tomnomnom/hacks.git /root/tools/tomnomnom-hacks
-go build /root/tools/tomnomnom-hacks/anti-burl/main.go
+cd /root/tools/tomnomnom-hacks/ && go build /root/tools/tomnomnom-hacks/anti-burl/main.go
 mv /root/tools/tomnomnom-hacks/anti-burl/main /usr/local/bin/antiburl
 go get -u github.com/tomnomnom/unfurl
 go get -u github.com/tomnomnom/qsreplace
 go get -u github.com/tomnomnom/anew
-go build /root/tools/tomnomnom-hacks/urinteresting/main.go
+cd /root/tools/tomnomnom-hacks/ && go build /root/tools/tomnomnom-hacks/urinteresting/main.go
 mv /root/tools/tomnomnom-hacks/urinteresting/main /usr/local/bin/urinteresting
 
 #Installing gf for potentially vulnerable parameter and enpoint detection
